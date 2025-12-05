@@ -1,29 +1,145 @@
-
-
 a {
   text-decoration: none;
   color: #013B56;
 }
 
-img {
-  width: 72px;
-  height: 72px;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #013B56;
 }
 
-header {
+/* Header top row: brand (logo + title) and links */
+.header-top {
   display: flex;
   justify-content: space-between;
-  
-}
-
-.logo {
-  display: flex;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  margin-right: 6px;
-  gap: 10px;
+  padding: 12px 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  width: 72px;
+  height: 72px;
+  display: block;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.header-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Banner occupies full width */
+.banner {
+  width: 100%;
+  height: 320px;
+  background-image: url('/public/boat.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Search nav: horizontal on wide screens, stacked on small screens */
+.search-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 12px 16px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#search-btn {
+  background-color: #2f6466;
+  color: white;
+  font-size: 14px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  flex: 0 0 140px;
+  width: auto;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Make search inputs flexible horizontally */
+.search-nav input,
+.search-nav select,
+.search-nav textarea {
+  flex: 1 1 0;
+  min-width: 140px;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 180px;
+  }
+  .header-top {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  /* Stack search inputs on small screens */
+  .search-nav {
+    flex-direction: column;
+  }
+  .search-nav input,
+  .search-nav select,
+  .search-nav textarea,
+  #search-btn {
+    width: 100%;
+    flex: none;
+  }
+}
+
+/* Cards layout inside main */
+.container {
+  padding: 16px;
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.card {
+  flex: 1 1 0;
+  min-width: 240px;
+  background: #fff;
+  border: 1px solid #e0e0e0; /* light gray border */
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    flex-direction: column;
+  }
 }

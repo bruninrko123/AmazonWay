@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AmazonWay</title>
   </head>
-  <header>
-    <div class="logo">
-       <img src="public/logo.png" alt="">
-      <h2>AmazonWay</h2>
-    </div>
-     <div class="links">
-       <a href="#">Rides</a>
-      <a href="#">Help</a>
-     </div>
-     
-  </header>
   <body>
-<nav>
+    <header>
+      <div class="header-top">
+        <div class="brand">
+          <img src="public/logo.png" alt="">
+          <h1>Amazon Way</h1>
+        </div>
+        <nav class="header-links">
+          <a href="#">Rides</a>
+          <a href="#">Help</a>
+        </nav>
+      </div>
+
+      <div class="banner" role="img" aria-label="Banner imagem de barco"></div>
+    </header>
+
+    <nav class="search-nav">
     <input type="text" placeholder="Origin" id="origin" />
     <input type="text" placeholder="Destination" id="destination" />
     <input type="number" placeholder="Max Price" id="max-price" />
@@ -25,6 +29,20 @@
     <button id="search-btn">Search</button>
 </nav>
   
-    <div id="app"></div>
+  <main class="container">
+    <h1>How do you want to travel today?</h1>
+
+    <div class="cards">
+      <div class="card">
+        <h2>Boats</h2>
+        <p>Find river and sea rides with local captains and guided tours.</p>
+      </div>
+      <div class="card">
+        <h2>Airplanes</h2>
+        <p>Search flights and private charters for long-distance travel.</p>
+      </div>
+    </div>
+  </main>
+   
     <script type="module" src="/src/main.js"></script>
   </body>
