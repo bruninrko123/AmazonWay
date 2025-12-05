@@ -36,12 +36,190 @@
       <div class="card">
         <h2>Boats</h2>
         <p>Find river and sea rides with local captains and guided tours.</p>
+        <button class="card-btn" data-modal="boat-modal">View Boat Options</button>
       </div>
       <div class="card">
         <h2>Airplanes</h2>
         <p>Search flights and private charters for long-distance travel.</p>
+        <button class="card-btn" data-modal="airplane-modal">View Airplane Options</button>
       </div>
     </div>
+
+    <h2 class="destinations-title">Popular Destinations</h2>
+
+    <div class="destination-cards">
+      <div class="destination-card">
+        <div class="destination-image" style="background-image: url('/public/manaus.jpg');">
+          <div class="price-badge">From $45</div>
+        </div>
+        <div class="destination-info">
+          <h3>Manaus</h3>
+          <p class="destination-description">Heart of the Amazon rainforest with rich biodiversity and cultural heritage.</p>
+          <div class="destination-details">
+            <span class="duration">2-3 hours by boat</span>
+            <span class="rating">★★★★☆ 4.2</span>
+          </div>
+          <button class="destination-btn">Book Now</button>
+        </div>
+      </div>
+      
+      <div class="destination-card">
+        <div class="destination-image" style="background-image: url('/public/santarem.jpg');">
+          <div class="price-badge">From $65</div>
+        </div>
+        <div class="destination-info">
+          <h3>Santarém</h3>
+          <p class="destination-description">Where the Tapajós meets the Amazon River, perfect for fishing and river tours.</p>
+          <div class="destination-details">
+            <span class="duration">4-5 hours by boat</span>
+            <span class="rating">★★★★★ 4.8</span>
+          </div>
+          <button class="destination-btn">Book Now</button>
+        </div>
+      </div>
+      
+      <div class="destination-card">
+        <div class="destination-image" style="background-image: url('/public/belem.jpg');">
+          <div class="price-badge">From $85</div>
+        </div>
+        <div class="destination-info">
+          <h3>Belém</h3>
+          <p class="destination-description">Gateway to the Amazon with colonial architecture and vibrant markets.</p>
+          <div class="destination-details">
+            <span class="duration">6-8 hours by boat</span>
+            <span class="rating">★★★★☆ 4.5</span>
+          </div>
+          <button class="destination-btn">Book Now</button>
+        </div>
+      </div>
+      
+      <div class="destination-card">
+        <div class="destination-image" style="background-image: url('/public/parintins.jpg');">
+          <div class="price-badge">From $55</div>
+        </div>
+        <div class="destination-info">
+          <h3>Parintins</h3>
+          <p class="destination-description">Famous for the Boi Bumbá festival and traditional Amazonian culture.</p>
+          <div class="destination-details">
+            <span class="duration">3-4 hours by boat</span>
+            <span class="rating">★★★★☆ 4.3</span>
+          </div>
+          <button class="destination-btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Boats -->
+    <div id="boat-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Boat Transportation Options</h2>
+        <div class="modal-body">
+          <div class="transport-option">
+            <h3>River Boats</h3>
+            <p><strong>Capacity:</strong> 8-50 passengers</p>
+            <p><strong>Speed:</strong> 15-25 km/h</p>
+            <p><strong>Best for:</strong> Local river transportation, scenic tours</p>
+            <p><strong>Price Range:</strong> $10-50 per trip</p>
+            <p><strong>Features:</strong> Life jackets provided, local captain, scenic routes</p>
+          </div>
+          <div class="transport-option">
+            <h3>Sea Boats</h3>
+            <p><strong>Capacity:</strong> 12-100 passengers</p>
+            <p><strong>Speed:</strong> 20-35 km/h</p>
+            <p><strong>Best for:</strong> Coastal travel, island hopping</p>
+            <p><strong>Price Range:</strong> $25-150 per trip</p>
+            <p><strong>Features:</strong> Safety equipment, experienced crew, weather protection</p>
+          </div>
+          <div class="transport-option">
+            <h3>Private Charters</h3>
+            <p><strong>Capacity:</strong> 2-20 passengers</p>
+            <p><strong>Speed:</strong> 25-45 km/h</p>
+            <p><strong>Best for:</strong> Private tours, fishing trips, custom routes</p>
+            <p><strong>Price Range:</strong> $100-500 per trip</p>
+            <p><strong>Features:</strong> Customizable itinerary, premium amenities, dedicated captain</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Airplanes -->
+    <div id="airplane-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Airplane Transportation Options</h2>
+        <div class="modal-body">
+          <div class="transport-option">
+            <h3>Small Aircraft</h3>
+            <p><strong>Capacity:</strong> 4-9 passengers</p>
+            <p><strong>Range:</strong> 500-1500 km</p>
+            <p><strong>Best for:</strong> Short to medium distance flights, remote locations</p>
+            <p><strong>Price Range:</strong> $200-800 per trip</p>
+            <p><strong>Features:</strong> Quick boarding, access to small airstrips, flexible scheduling</p>
+          </div>
+          <div class="transport-option">
+            <h3>Regional Aircraft</h3>
+            <p><strong>Capacity:</strong> 19-50 passengers</p>
+            <p><strong>Range:</strong> 1000-3000 km</p>
+            <p><strong>Best for:</strong> Inter-city travel, scheduled routes</p>
+            <p><strong>Price Range:</strong> $150-600 per passenger</p>
+            <p><strong>Features:</strong> Regular schedules, baggage allowance, meal service</p>
+          </div>
+          <div class="transport-option">
+            <h3>Private Charters</h3>
+            <p><strong>Capacity:</strong> 6-15 passengers</p>
+            <p><strong>Range:</strong> 1500-4000 km</p>
+            <p><strong>Best for:</strong> Business travel, custom itineraries, premium service</p>
+            <p><strong>Price Range:</strong> $1000-5000 per trip</p>
+            <p><strong>Features:</strong> Luxury amenities, flexible departure times, personalized service</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="about-section">
+      <div class="about-container">
+        <h2>About AmazonWay</h2>
+        <p>Welcome to AmazonWay - your trusted platform for booking water and air transportation in the Amazon region and beyond. Just like BlaBlaCar revolutionized road travel by connecting passengers with drivers, AmazonWay connects you with boat captains and airplane pilots for unique travel experiences.</p>
+        
+        <div class="features">
+          <div class="feature">
+            <h3>🚤 Boat Reservations</h3>
+            <p>Book rides with local boat captains for river journeys, coastal trips, and island adventures. Perfect for exploring the Amazon's waterways safely and affordably.</p>
+          </div>
+          <div class="feature">
+            <h3>✈️ Airplane Bookings</h3>
+            <p>Reserve seats on small aircraft and private charters to reach remote destinations quickly. Ideal for accessing areas where traditional airlines don't operate.</p>
+          </div>
+          <div class="feature">
+            <h3>🤝 Community-Driven</h3>
+            <p>Connect directly with experienced local captains and pilots who know the region best. Share costs, make new friends, and travel sustainably.</p>
+          </div>
+        </div>
+
+        <div class="how-it-works">
+          <h3>How It Works</h3>
+          <div class="steps">
+            <div class="step">
+              <span class="step-number">1</span>
+              <p>Search for available rides by entering your origin and destination</p>
+            </div>
+            <div class="step">
+              <span class="step-number">2</span>
+              <p>Browse options, compare prices, and read reviews from other travelers</p>
+            </div>
+            <div class="step">
+              <span class="step-number">3</span>
+              <p>Book your spot and coordinate with the captain or pilot</p>
+            </div>
+            <div class="step">
+              <span class="step-number">4</span>
+              <p>Enjoy your journey and share your experience with the community</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
    
     <script type="module" src="/src/main.js"></script>
